@@ -796,6 +796,29 @@ ul {
   gap: 18px;
 }
 
+.credentials {
+  display: grid;
+  gap: 20px;
+}
+
+.credentials .info-block {
+  scroll-margin-top: 96px;
+}
+
+.credentials .info-block h3 {
+  margin-bottom: 16px;
+}
+
+@media (min-width: 860px) {
+  .credentials {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .credentials .info-block:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
 .education-item {
   padding-bottom: 22px;
   border-bottom: 1px solid var(--line);

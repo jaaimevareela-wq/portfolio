@@ -328,17 +328,13 @@ const navSections = computed(() => [
   { id: 'about', label: t('About', 'Sobre mí') },
   { id: 'experience', label: t('Experience', 'Experiencia') },
   { id: 'skills', label: t('Skills', 'Habilidades') },
+  { id: 'education', label: t('Education', 'Educación') },
   { id: 'publications', label: t('Publications', 'Publicaciones') },
   { id: 'events', label: t('Events', 'Eventos') },
   { id: 'contact', label: t('Contact', 'Contacto') },
 ])
 
 const moreSections = computed(() => [
-  { id: 'education', label: t('Education', 'Educación') },
-  { id: 'certifications', label: t('Certifications', 'Certificaciones') },
-  { id: 'test-scores', label: t('Test Scores', 'Resultados') },
-  { id: 'honors', label: t('Honors', 'Reconocimientos') },
-  { id: 'languages', label: t('Languages', 'Idiomas') },
   { id: 'volunteering', label: t('Volunteering', 'Voluntariado') },
   { id: 'presence', label: t('Presence', 'Galería') },
 ])
@@ -707,91 +703,70 @@ onUnmounted(() => {
           <h2>{{ t('Graduate-level preparation across data science, rights, and public management.', 'Formación de posgrado en ciencia de datos, derechos y gestión pública.') }}</h2>
         </div>
 
-        <article class="info-block">
-          <div class="education-list">
-            <article v-for="item in education" :key="item.school + item.degree" class="education-item">
-              <p class="timeline__org">{{ item.school }}</p>
-              <p class="muted"><strong>{{ tx(item.degree) }}</strong></p>
-              <p class="muted">{{ tx(item.field) }}</p>
-              <p class="timeline__type">{{ tx(item.period) }}</p>
-            </article>
-          </div>
-        </article>
-      </section>
+        <div class="credentials">
+          <article class="info-block">
+            <h3>{{ t('Degrees', 'Formación académica') }}</h3>
+            <div class="education-list">
+              <article v-for="item in education" :key="item.school + item.degree" class="education-item">
+                <p class="timeline__org">{{ item.school }}</p>
+                <p class="muted"><strong>{{ tx(item.degree) }}</strong></p>
+                <p class="muted">{{ tx(item.field) }}</p>
+                <p class="timeline__type">{{ tx(item.period) }}</p>
+              </article>
+            </div>
+          </article>
 
-      <section id="certifications" class="section reveal">
-        <div class="section__head">
-          <p class="eyebrow">{{ t('Certifications', 'Certificaciones') }}</p>
-          <h2>{{ t('Professional credentials supporting development, governance, and international work.', 'Credenciales profesionales que respaldan trabajo en desarrollo, gobernanza y cooperación internacional.') }}</h2>
+          <article id="certifications" class="info-block">
+            <h3>{{ t('Certifications', 'Certificaciones') }}</h3>
+            <div class="education-list">
+              <article v-for="item in certifications" :key="item.title" class="education-item">
+                <p class="timeline__org">{{ tx(item.title) }}</p>
+                <p class="muted">{{ tx(item.issuer) }}</p>
+                <p class="timeline__type">{{ tx(item.issued) }}</p>
+                <p v-if="item.credentialId" class="muted">{{ t('Credential ID:', 'ID de credencial:') }} {{ item.credentialId }}</p>
+                <p v-if="item.href" class="muted">
+                  <a :href="item.href" target="_blank" rel="noreferrer">{{ t('View credential', 'Ver credencial') }}</a>
+                </p>
+              </article>
+            </div>
+          </article>
+
+          <article id="test-scores" class="info-block">
+            <h3>{{ t('Test Scores', 'Resultados') }}</h3>
+            <div class="education-list">
+              <article v-for="item in testScores" :key="item.title" class="education-item">
+                <p class="timeline__org">{{ tx(item.title) }}</p>
+                <p class="muted"><strong>{{ t('Score:', 'Puntaje:') }}</strong> {{ tx(item.score) }}</p>
+                <p class="timeline__type">{{ tx(item.date) }}</p>
+                <p class="muted">{{ tx(item.associatedWith) }}</p>
+                <p class="muted">{{ tx(item.note) }}</p>
+              </article>
+            </div>
+          </article>
+
+          <article id="honors" class="info-block">
+            <h3>{{ t('Honors', 'Reconocimientos') }}</h3>
+            <div class="education-list">
+              <article v-for="item in honors" :key="item.title" class="education-item">
+                <p class="timeline__org">{{ tx(item.title) }}</p>
+                <p class="muted">{{ tx(item.issuer) }}</p>
+                <p class="timeline__type">{{ tx(item.issued) }}</p>
+                <p class="muted">{{ tx(item.associatedWith) }}</p>
+                <p class="muted">{{ tx(item.note) }}</p>
+              </article>
+            </div>
+          </article>
+
+          <article id="languages" class="info-block">
+            <h3>{{ t('Languages', 'Idiomas') }}</h3>
+            <div class="education-list">
+              <article v-for="item in languages" :key="item.name" class="education-item">
+                <p class="timeline__org">{{ tx(item.name) }}</p>
+                <p class="muted">{{ tx(item.level) }}</p>
+              </article>
+            </div>
+          </article>
         </div>
-
-        <article class="info-block">
-          <div class="education-list">
-            <article v-for="item in certifications" :key="item.title" class="education-item">
-              <p class="timeline__org">{{ tx(item.title) }}</p>
-              <p class="muted">{{ tx(item.issuer) }}</p>
-              <p class="timeline__type">{{ tx(item.issued) }}</p>
-              <p v-if="item.credentialId" class="muted">{{ t('Credential ID:', 'ID de credencial:') }} {{ item.credentialId }}</p>
-              <p v-if="item.href" class="muted">
-                <a :href="item.href" target="_blank" rel="noreferrer">{{ t('View credential', 'Ver credencial') }}</a>
-              </p>
-            </article>
-          </div>
-        </article>
-      </section>
-
-      <section id="test-scores" class="section reveal">
-        <div class="section__head">
-          <p class="eyebrow">{{ t('Test Scores', 'Resultados') }}</p>
-          <h2>{{ t('Academic performance validated through national standardized assessment.', 'Desempeño académico validado mediante una evaluación nacional estandarizada.') }}</h2>
-        </div>
-
-        <article class="info-block">
-          <div class="education-list">
-            <article v-for="item in testScores" :key="item.title" class="education-item">
-              <p class="timeline__org">{{ tx(item.title) }}</p>
-              <p class="muted"><strong>{{ t('Score:', 'Puntaje:') }}</strong> {{ tx(item.score) }}</p>
-              <p class="timeline__type">{{ tx(item.date) }}</p>
-              <p class="muted">{{ tx(item.associatedWith) }}</p>
-              <p class="muted">{{ tx(item.note) }}</p>
-            </article>
-          </div>
-        </article>
-      </section>
-
-      <section id="honors" class="section reveal">
-        <div class="section__head">
-          <p class="eyebrow">{{ t('Honors', 'Reconocimientos') }}</p>
-          <h2>{{ t('Recognition for public-interest work and rights-based leadership.', 'Reconocimientos por trabajo de interés público y liderazgo con enfoque de derechos.') }}</h2>
-        </div>
-
-        <article class="info-block">
-          <div class="education-list">
-            <article v-for="item in honors" :key="item.title" class="education-item">
-              <p class="timeline__org">{{ tx(item.title) }}</p>
-              <p class="muted">{{ tx(item.issuer) }}</p>
-              <p class="timeline__type">{{ tx(item.issued) }}</p>
-              <p class="muted">{{ tx(item.associatedWith) }}</p>
-              <p class="muted">{{ tx(item.note) }}</p>
-            </article>
-          </div>
-        </article>
-      </section>
-
-      <section id="languages" class="section reveal">
-        <div class="section__head">
-          <p class="eyebrow">{{ t('Languages', 'Idiomas') }}</p>
-          <h2>{{ t('Multilingual communication for international and cross-sector collaboration.', 'Comunicación multilingüe para colaboración internacional e intersectorial.') }}</h2>
-        </div>
-
-        <article class="info-block">
-          <div class="education-list">
-            <article v-for="item in languages" :key="item.name" class="education-item">
-              <p class="timeline__org">{{ tx(item.name) }}</p>
-              <p class="muted">{{ tx(item.level) }}</p>
-            </article>
-          </div>
-        </article>
       </section>
 
       <section id="publications" class="section reveal">
