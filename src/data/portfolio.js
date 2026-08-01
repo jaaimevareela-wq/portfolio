@@ -1,6 +1,9 @@
 import jaimeUnPhoto from '../assets/jaime-un-photo.png'
 import jaimeGraduationPhoto from '../assets/jaime-graduation-photo.png'
 import jaimeAwardPhoto from '../assets/jaime-medalla-francisco-villa.png'
+import previewBbrDashboard from '../assets/preview-bbr-dashboard.png'
+import previewEdaColombia from '../assets/preview-eda-colombia.png'
+import previewVocesInfancia from '../assets/preview-voces-infancia.png'
 import eventAgenda1 from '../assets/event-agenda-1.png'
 import eventAgenda2 from '../assets/event-agenda-2.png'
 import eventAgenda3 from '../assets/event-agenda-3.png'
@@ -61,6 +64,8 @@ export const featuredCaseStudies = [
       'I turned fragmented reporting into an executive-ready decision tool with filters, KPIs, geographic views, and a standardized taxonomy of 9 strategic areas.',
     tools: ['Power BI', 'Excel', 'Data cleaning', 'Taxonomy design', 'Portfolio reporting'],
     href: 'https://app.powerbi.com/view?r=eyJrIjoiYTg2YWE5MmUtMDkxYi00NzU0LTgyZGYtMWM0MzU2OTFmMTE3IiwidCI6IjMxNTI1NWE3LTk2NDMtNDYyYy04MGRkLTRjODk1NTgwZDg0NSIsImMiOjh9',
+    preview: previewBbrDashboard,
+    previewAlt: 'Preview of the BB&R Power BI portfolio intelligence dashboard',
   },
   {
     title: 'Childhood diarrheal disease and structural poverty in Colombia',
@@ -73,6 +78,8 @@ export const featuredCaseStudies = [
       'I turned fragmented administrative records into an interactive decision-support tool that surfaces vulnerability clusters, confirms a strong NBI–incidence relationship, and prioritizes territories for public-health intervention.',
     tools: ['Power BI', 'Python', 'R', 'DAX', 'Epidemiological indicators', 'Social determinants of health'],
     href: 'https://app.powerbi.com/view?r=eyJrIjoiNjI1N2JkNzQtNjc0My00YjU1LWI4ZGItM2U4YzY2OWE0ZGY2IiwidCI6IjMxNTI1NWE3LTk2NDMtNDYyYy04MGRkLTRjODk1NTgwZDg0NSIsImMiOjh9',
+    preview: previewEdaColombia,
+    previewAlt: 'Preview of the Colombia EDA and NBI Power BI dashboard',
   },
   {
     title: 'Child-rights evidence for public policy advocacy',
@@ -85,6 +92,9 @@ export const featuredCaseStudies = [
       'I helped connect data, advocacy, and inter-institutional dialogue to strengthen child-protection narratives and public-policy positioning.',
     tools: ['Policy analysis', 'Research synthesis', 'Reporting', 'Legislative monitoring', 'Stakeholder coordination'],
     href: 'https://www.worldvision.es/wp-content/uploads/2024/09/voces-de-la-infancia.pdf',
+    preview: previewVocesInfancia,
+    previewAlt: 'Cover of the World Vision report Voces de la infancia',
+    previewContain: true,
   },
   {
     title: 'Youth agenda from regional dialogue to national presentation',
@@ -97,6 +107,8 @@ export const featuredCaseStudies = [
       'I contributed to a youth-led agenda that moved from preparatory working sessions to a national presentation at the INE, strengthening visibility and policy dialogue.',
     tools: ['Facilitation', 'Public engagement', 'Documentation', 'Policy dialogue', 'Cross-sector coordination'],
     href: 'https://issuu.com/alternativasycapacidadesac/docs/agenda_ine_final',
+    preview: eventIneStage1,
+    previewAlt: 'Preview of the national youth agenda presentation at INE',
   },
 ]
 

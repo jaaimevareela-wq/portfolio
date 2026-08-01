@@ -336,5 +336,13 @@ export default {
     Documentation: 'Documentación',
     'Policy dialogue': 'Diálogo de política pública',
     'Cross-sector coordination': 'Coordinación intersectorial',
+    'Preview of the BB&R Power BI portfolio intelligence dashboard':
+      'Vista previa del dashboard de inteligencia de portafolio BB&R en Power BI',
+    'Preview of the Colombia EDA and NBI Power BI dashboard':
+      'Vista previa del dashboard de EDA y NBI en Colombia en Power BI',
+    'Preview of the national youth agenda presentation at INE':
+      'Vista previa de la presentación nacional de la agenda de juventudes en el INE',
+    'Cover of the World Vision report Voces de la infancia':
+      'Portada del informe Voces de la infancia de World Vision',
   },
 }

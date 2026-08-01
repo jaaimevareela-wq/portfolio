@@ -605,6 +605,18 @@ onUnmounted(() => {
 
         <div class="case-study-grid">
           <article v-for="item in featuredCaseStudies" :key="item.title" class="info-block case-study">
+            <a
+              v-if="item.preview"
+              class="case-study__preview"
+              :class="{ 'case-study__preview--contain': item.previewContain }"
+              :href="item.href || undefined"
+              :target="item.href ? '_blank' : undefined"
+              :rel="item.href ? 'noreferrer' : undefined"
+              :aria-label="tx(item.previewAlt || item.title)"
+            >
+              <img :src="item.preview" :alt="tx(item.previewAlt || item.title)" loading="lazy" />
+              <span class="case-study__preview-label">{{ t('Open preview', 'Abrir preview') }}</span>
+            </a>
             <p class="timeline__type">{{ tx(item.context) }}</p>
             <h3>{{ tx(item.title) }}</h3>
             <div class="case-study__stack">
