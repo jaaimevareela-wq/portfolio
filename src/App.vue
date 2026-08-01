@@ -450,7 +450,7 @@ onUnmounted(() => {
           <span class="pulse" aria-hidden="true" />
           {{ t('Open to work', 'Disponible para trabajar') }}
           <span class="dot">·</span>
-          {{ t('León, Spain', 'León, España') }}
+          {{ t('León, Spain · Remote ES/LatAm', 'León, España · Remoto ES/LatAm') }}
         </p>
 
         <h1 class="hero__brand">
@@ -469,29 +469,18 @@ onUnmounted(() => {
             )
           }}
         </p>
-        <p class="hero__target">
-          {{
-            t(
-              'Open to roles in data analysis, policy/research, program work, and advocacy where evidence and coordination matter.',
-              'Abierto a roles de análisis de datos, política/investigación, programas e incidencia donde importen la evidencia y la coordinación.',
-            )
-          }}
-        </p>
 
         <div class="hero__meta">
-          <span class="chip">{{ t('Immediate availability', 'Disponibilidad inmediata') }}</span>
           <span class="chip chip--quiet">{{ t('Public policy', 'Política pública') }}</span>
           <span class="chip chip--quiet">{{ t('Human rights', 'Derechos humanos') }}</span>
           <span class="chip chip--quiet">Data Analyst</span>
-          <span class="chip chip--quiet">Remote ES / LatAm</span>
         </div>
 
         <div class="hero__ctas">
           <a class="btn btn--primary" href="#featured-impact">{{ t('View selected work', 'Ver trabajo destacado') }}</a>
-          <a class="btn btn--primary" :href="cvHref" download>
+          <a class="btn btn--ghost" :href="cvHref" download>
             {{ t('Download CV', 'Descargar CV') }}
           </a>
-          <a class="btn btn--ghost" href="mailto:jaaimevareela@gmail.com">{{ t('Get in touch', 'Contactar') }}</a>
         </div>
 
         <div class="hero__socials">
