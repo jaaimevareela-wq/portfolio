@@ -456,24 +456,24 @@ onUnmounted(() => {
         <h1 class="hero__brand">
           {{
             t(
-              'Data Analyst transforming public policy and social-impact data into actionable insights.',
-              'Analista de datos que transforma datos de política pública e impacto social en insights accionables.',
+              'Data Analyst with a background in public policy and social impact.',
+              'Analista de datos con trayectoria en política pública e impacto social.',
             )
           }}
         </h1>
         <p class="hero__headline">
           {{
             t(
-              'I combine public-sector experience and analytics to build dashboards, evidence, and decision-ready insights.',
-              'Combino experiencia en el sector público y analítica para construir dashboards, evidencia e insights listos para la toma de decisiones.',
+              'I combine public-sector experience with Power BI, Python, and R to build dashboards and clear reports for decision-making.',
+              'Combino experiencia en el sector público con Power BI, Python y R para construir dashboards y reportes claros para la toma de decisiones.',
             )
           }}
         </p>
         <p class="hero__target">
           {{
             t(
-              'I am targeting Data Analyst, Junior Data Scientist, and Policy Analytics roles.',
-              'Estoy buscando roles de Data Analyst, Junior Data Scientist y analítica orientada a políticas públicas.',
+              'I am looking for Data Analyst roles and applied analytics work in policy or social-impact contexts.',
+              'Busco roles de Data Analyst y trabajo de analítica aplicada en contextos de política pública o impacto social.',
             )
           }}
         </p>
@@ -481,7 +481,7 @@ onUnmounted(() => {
         <div class="hero__meta">
           <span class="chip">{{ t('Immediate availability', 'Disponibilidad inmediata') }}</span>
           <span class="chip chip--quiet">Data Analyst</span>
-          <span class="chip chip--quiet">Junior Data Scientist</span>
+          <span class="chip chip--quiet">{{ t('Policy analytics', 'Analítica de políticas') }}</span>
           <span class="chip chip--quiet">Remote ES / LatAm</span>
         </div>
 
@@ -574,8 +574,8 @@ onUnmounted(() => {
                 <p class="muted">
                   {{
                     t(
-                      'I am best positioned for data analyst, insights, research, and policy-analytics roles where evidence needs to inform decisions.',
-                      'Estoy mejor posicionado para roles de data analyst, insights, investigación y analítica de políticas donde la evidencia deba informar decisiones.',
+                      'I am best positioned for data analyst, research, and policy-analytics roles where evidence needs to inform decisions.',
+                      'Encajo mejor en roles de analista de datos, investigación y analítica de políticas donde la evidencia deba informar decisiones.',
                     )
                   }}
                 </p>
