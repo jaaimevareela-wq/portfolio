@@ -298,6 +298,18 @@ export default {
     'Data cleaning': 'Limpieza de datos',
     'Taxonomy design': 'Diseño de taxonomía',
     'Portfolio reporting': 'Reporting de portafolio',
+    'Childhood diarrheal disease and structural poverty in Colombia':
+      'Enfermedad diarreica infantil y pobreza estructural en Colombia',
+    'Master’s in Applied Data Science for Social Sciences · USAL–UGR':
+      'Máster en Ciencia de Datos Aplicada a las Ciencias Sociales · USAL–UGR',
+    'Public-health and policy audiences needed clear evidence of how structural poverty shapes the geography, seasonality, and severity of acute diarrheal disease (EDA) among children in Colombia.':
+      'Audiencias de salud pública y política necesitaban evidencia clara de cómo la pobreza estructural moldea la geografía, la estacionalidad y la severidad de la enfermedad diarreica aguda (EDA) en la niñez en Colombia.',
+    'I integrated SIVIGILA microdata with DANE population and unmet basic needs (NBI) indicators, cleaned and modeled the data in Python and R, and designed a three-canvas Power BI dashboard linking incidence rates, territorial vulnerability, and early childhood burden.':
+      'Integré microdatos de SIVIGILA con indicadores de población y necesidades básicas insatisfachas (NBI) del DANE, limpié y modelé los datos en Python y R, y diseñé un dashboard de Power BI en tres lienzos que vincula tasas de incidencia, vulnerabilidad territorial y carga en primera infancia.',
+    'I turned fragmented administrative records into an interactive decision-support tool that surfaces vulnerability clusters, confirms a strong NBI–incidence relationship, and prioritizes territories for public-health intervention.':
+      'Transformé registros administrativos fragmentados en una herramienta interactiva de apoyo a la decisión que revela clústeres de vulnerabilidad, confirma una relación fuerte entre NBI e incidencia, y prioriza territorios para intervención en salud pública.',
+    'Epidemiological indicators': 'Indicadores epidemiológicos',
+    'Social determinants of health': 'Determinantes sociales de la salud',
     'Child-rights evidence for public policy advocacy': 'Evidencia sobre derechos de la niñez para incidencia en política pública',
     'World Vision Mexico · Advocacy analytics': 'World Vision México · Analítica para incidencia',
     'Campaign and policy teams needed evidence, legislative monitoring, and structured recommendations to support child-rights advocacy.':

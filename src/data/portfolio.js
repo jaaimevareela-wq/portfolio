@@ -60,7 +60,19 @@ export const featuredCaseStudies = [
     impact:
       'I turned fragmented reporting into an executive-ready decision tool with filters, KPIs, geographic views, and a standardized taxonomy of 9 strategic areas.',
     tools: ['Power BI', 'Excel', 'Data cleaning', 'Taxonomy design', 'Portfolio reporting'],
-    href: '',
+    href: 'https://app.powerbi.com/view?r=eyJrIjoiYTg2YWE5MmUtMDkxYi00NzU0LTgyZGYtMWM0MzU2OTFmMTE3IiwidCI6IjMxNTI1NWE3LTk2NDMtNDYyYy04MGRkLTRjODk1NTgwZDg0NSIsImMiOjh9',
+  },
+  {
+    title: 'Childhood diarrheal disease and structural poverty in Colombia',
+    context: 'Master’s in Applied Data Science for Social Sciences · USAL–UGR',
+    problem:
+      'Public-health and policy audiences needed clear evidence of how structural poverty shapes the geography, seasonality, and severity of acute diarrheal disease (EDA) among children in Colombia.',
+    approach:
+      'I integrated SIVIGILA microdata with DANE population and unmet basic needs (NBI) indicators, cleaned and modeled the data in Python and R, and designed a three-canvas Power BI dashboard linking incidence rates, territorial vulnerability, and early childhood burden.',
+    impact:
+      'I turned fragmented administrative records into an interactive decision-support tool that surfaces vulnerability clusters, confirms a strong NBI–incidence relationship, and prioritizes territories for public-health intervention.',
+    tools: ['Power BI', 'Python', 'R', 'DAX', 'Epidemiological indicators', 'Social determinants of health'],
+    href: 'https://app.powerbi.com/view?r=eyJrIjoiNjI1N2JkNzQtNjc0My00YjU1LWI4ZGItM2U4YzY2OWE0ZGY2IiwidCI6IjMxNTI1NWE3LTk2NDMtNDYyYy04MGRkLTRjODk1NTgwZDg0NSIsImMiOjh9',
   },
   {
     title: 'Child-rights evidence for public policy advocacy',
