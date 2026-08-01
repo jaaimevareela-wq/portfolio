@@ -885,7 +885,9 @@ onUnmounted(() => {
 
         <div class="photo-grid">
           <figure v-for="item in gallery" :key="item.alt">
-            <img :src="item.src" :alt="item.alt" />
+            <div class="photo-grid__media">
+              <img :src="item.src" :alt="item.alt" />
+            </div>
             <figcaption>{{ tx(item.caption) }}</figcaption>
           </figure>
         </div>
