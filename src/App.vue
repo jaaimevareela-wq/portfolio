@@ -530,7 +530,7 @@ onUnmounted(() => {
 
           <div>
             <div class="stats-grid">
-              <article v-for="item in highlights" :key="item.label" class="stat-card">
+              <article v-for="item in highlights" :key="item.label" class="stat-card lift-card motion-item">
                 <p class="score__value">{{ item.value }}</p>
                 <p class="muted">{{ tx(item.label) }}</p>
               </article>
@@ -586,7 +586,7 @@ onUnmounted(() => {
             <article class="info-block proof-block">
               <h3>{{ t('Why I can add value', 'Por qué puedo aportar valor') }}</h3>
               <div class="proof-grid">
-                <article v-for="item in recruiterSignals" :key="item.title" class="proof-card">
+                <article v-for="item in recruiterSignals" :key="item.title" class="proof-card lift-card motion-item">
                   <p class="timeline__org">{{ tx(item.title) }}</p>
                   <p class="muted">{{ tx(item.text) }}</p>
                 </article>
@@ -618,7 +618,7 @@ onUnmounted(() => {
         </div>
 
         <div class="case-study-grid">
-          <article v-for="item in featuredCaseStudies" :key="item.title" class="info-block case-study">
+          <article v-for="item in featuredCaseStudies" :key="item.title" class="info-block case-study lift-card motion-item">
             <a
               v-if="item.preview"
               class="case-study__preview"
@@ -664,7 +664,7 @@ onUnmounted(() => {
         </div>
 
         <div class="timeline">
-          <article v-for="job in experience" :key="job.role + job.company" class="timeline__item timeline__item--featured">
+          <article v-for="job in experience" :key="job.role + job.company" class="timeline__item timeline__item--featured lift-card motion-item">
             <div>
               <p class="timeline__dates">{{ tx(job.period) }}</p>
               <p class="timeline__type">{{ tx(job.location) }}</p>
@@ -689,7 +689,7 @@ onUnmounted(() => {
         </div>
 
         <div class="skills">
-          <article v-for="group in skillGroups" :key="group.title" class="skill-group">
+          <article v-for="group in skillGroups" :key="group.title" class="skill-group lift-card motion-item">
             <h3>{{ tx(group.title) }}</h3>
             <ul class="tag-list">
               <li v-for="item in group.items" :key="item">{{ tx(item) }}</li>
@@ -801,14 +801,16 @@ onUnmounted(() => {
           <article
             v-for="event in events"
             :key="event.title"
-            class="event-card"
+            class="event-card motion-item"
             role="button"
             tabindex="0"
             @click="openEvent(event)"
             @keydown.enter.prevent="openEvent(event)"
             @keydown.space.prevent="openEvent(event)"
           >
-            <img :src="event.photos[0].src" :alt="event.photos[0].alt" class="event-card__cover" />
+            <div class="event-card__media">
+              <img :src="event.photos[0].src" :alt="event.photos[0].alt" class="event-card__cover" />
+            </div>
             <div class="event-card__body">
               <h3>{{ tx(event.title) }}</h3>
               <p v-if="event.meta" class="timeline__type">{{ tx(event.meta) }}</p>
@@ -886,7 +888,7 @@ onUnmounted(() => {
         </div>
 
         <div class="photo-grid">
-          <figure v-for="item in gallery" :key="item.alt">
+          <figure v-for="item in gallery" :key="item.alt" class="lift-card motion-item">
             <div class="photo-grid__media">
               <img :src="item.src" :alt="item.alt" />
             </div>
