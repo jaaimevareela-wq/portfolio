@@ -281,6 +281,12 @@ export default {
     'Best fit': 'Mejor encaje',
     'What stands out': 'Lo que destaca',
     'Immediate value': 'Valor inmediato',
+    'I am a strong fit for roles in NGOs, public institutions, and consulting teams that need both policy experience and practical analytics.':
+      'Encajo bien en roles en ONG, instituciones públicas y equipos de consultoría que necesiten experiencia en política y analítica práctica.',
+    'I combine public-policy execution, stakeholder coordination, and hands-on analytics for real institutional decisions.':
+      'Combino ejecución de política pública, coordinación de actores y analítica aplicada para decisiones institucionales reales.',
+    'I can contribute quickly in reporting, evidence synthesis, coordination, dashboarding, and indicator design for mission-driven teams.':
+      'Puedo aportar rápidamente en reporting, síntesis de evidencia, coordinación, dashboarding y diseño de indicadores para equipos con propósito.',
     'I am best positioned for data analyst and policy-insights roles in NGOs, international organizations, consulting teams, and public-interest institutions.':
       'Estoy mejor posicionado para roles de analista de datos e insights de política en ONG, organismos internacionales, equipos de consultoría e instituciones de interés público.',
     'I bring a rare combination of public-policy execution, stakeholder coordination, and hands-on analytics for real institutional decisions.':

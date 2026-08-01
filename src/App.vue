@@ -456,32 +456,33 @@ onUnmounted(() => {
         <h1 class="hero__brand">
           {{
             t(
-              'Data Analyst with a background in public policy and social impact.',
-              'Analista de datos con trayectoria en política pública e impacto social.',
+              'Public policy and human rights professional with applied data skills.',
+              'Profesional en política pública y derechos humanos con herramientas de análisis de datos.',
             )
           }}
         </h1>
         <p class="hero__headline">
           {{
             t(
-              'I combine public-sector experience with Power BI, Python, and R to build dashboards and clear reports for decision-making.',
-              'Combino experiencia en el sector público con Power BI, Python y R para construir dashboards y reportes claros para la toma de decisiones.',
+              'More than seven years in government, NGOs, and international spaces. I use data when it helps build evidence, dashboards, and clearer decisions.',
+              'Más de siete años en gobierno, ONG y espacios internacionales. Uso datos cuando ayudan a construir evidencia, dashboards y decisiones más claras.',
             )
           }}
         </p>
         <p class="hero__target">
           {{
             t(
-              'I am looking for Data Analyst roles and applied analytics work in policy or social-impact contexts.',
-              'Busco roles de Data Analyst y trabajo de analítica aplicada en contextos de política pública o impacto social.',
+              'Open to roles in data analysis, policy/research, program work, and advocacy where evidence and coordination matter.',
+              'Abierto a roles de análisis de datos, política/investigación, programas e incidencia donde importen la evidencia y la coordinación.',
             )
           }}
         </p>
 
         <div class="hero__meta">
           <span class="chip">{{ t('Immediate availability', 'Disponibilidad inmediata') }}</span>
+          <span class="chip chip--quiet">{{ t('Public policy', 'Política pública') }}</span>
+          <span class="chip chip--quiet">{{ t('Human rights', 'Derechos humanos') }}</span>
           <span class="chip chip--quiet">Data Analyst</span>
-          <span class="chip chip--quiet">{{ t('Policy analytics', 'Analítica de políticas') }}</span>
           <span class="chip chip--quiet">Remote ES / LatAm</span>
         </div>
 
@@ -507,16 +508,16 @@ onUnmounted(() => {
           <h2>
             {{
               t(
-                'Analytical depth shaped by public-sector execution.',
-                'Profundidad analítica construida desde la experiencia en lo público.',
+                'Public-sector experience, now strengthened with applied analytics.',
+                'Experiencia en lo público, reforzada ahora con analítica aplicada.',
               )
             }}
           </h2>
           <p class="lead">
             {{
               t(
-                'I bring over seven years of experience across government, international organizations, and mission-driven consulting. My analytics work is tied to real policy outcomes, public accountability, and institutional coordination.',
-                'Aporto más de siete años de experiencia en gobierno, organismos internacionales y consultoría con propósito social. Mi trabajo analítico está conectado con resultados reales de política pública, rendición de cuentas y articulación institucional.',
+                'I bring over seven years across government, international organizations, and mission-driven consulting: advocacy, coordination, and public management. Analytics is part of how I work, not the whole story.',
+                'Aporto más de siete años en gobierno, organismos internacionales y consultoría con propósito social: incidencia, coordinación y gestión pública. La analítica es parte de cómo trabajo, no toda la historia.',
               )
             }}
           </p>
@@ -541,8 +542,8 @@ onUnmounted(() => {
                 <p class="muted">
                   {{
                     t(
-                      'I use Power BI, Python, R, and SQL to build dashboards, reporting workflows, and applied analytics for social-impact and policy contexts.',
-                      'Uso Power BI, Python, R y SQL para construir dashboards, flujos de reporting y analítica aplicada en contextos de impacto social y política pública.',
+                      'I connect policy and program work with practical analytics: dashboards, reporting, and evidence that teams can use.',
+                      'Conecto trabajo de política y programas con analítica práctica: dashboards, reporting y evidencia que los equipos puedan usar.',
                     )
                   }}
                 </p>
@@ -574,8 +575,8 @@ onUnmounted(() => {
                 <p class="muted">
                   {{
                     t(
-                      'I am best positioned for data analyst, research, and policy-analytics roles where evidence needs to inform decisions.',
-                      'Encajo mejor en roles de analista de datos, investigación y analítica de políticas donde la evidencia deba informar decisiones.',
+                      'I fit roles in analysis, research, programs, advocacy, or policy support—especially where coordination and evidence both matter.',
+                      'Encajo en roles de análisis, investigación, programas, incidencia o apoyo a políticas, sobre todo donde importen la coordinación y la evidencia.',
                     )
                   }}
                 </p>
@@ -601,8 +602,8 @@ onUnmounted(() => {
           <h2>
             {{
               t(
-                'Selected work that shows how I turn data and coordination into decision support.',
-                'Trabajo seleccionado que muestra cómo convierto datos y coordinación en soporte para decisiones.',
+                'Selected work that shows how I connect policy, coordination, and data.',
+                'Trabajo seleccionado que muestra cómo conecto política, coordinación y datos.',
               )
             }}
           </h2>
@@ -659,7 +660,7 @@ onUnmounted(() => {
       <section id="experience" class="section reveal">
         <div class="section__head">
           <p class="eyebrow">{{ t('Experience', 'Experiencia') }}</p>
-          <h2>{{ t('From institutional coordination to data-driven decision support.', 'De la coordinación institucional al soporte de decisiones basado en datos.') }}</h2>
+          <h2>{{ t('From local government to international advocacy and applied analytics.', 'Del gobierno local a la incidencia internacional y la analítica aplicada.') }}</h2>
         </div>
 
         <div class="timeline">
@@ -684,7 +685,7 @@ onUnmounted(() => {
       <section id="skills" class="section reveal">
         <div class="section__head">
           <p class="eyebrow">{{ t('Skills', 'Habilidades') }}</p>
-          <h2>{{ t('The technical toolkit I use to turn complex information into usable decisions.', 'El toolkit técnico que uso para convertir información compleja en decisiones utilizables.') }}</h2>
+          <h2>{{ t('Tools I use when evidence and reporting need to be clear and useful.', 'Herramientas que uso cuando la evidencia y el reporting deben ser claros y útiles.') }}</h2>
         </div>
 
         <div class="skills">
@@ -902,8 +903,8 @@ onUnmounted(() => {
           <p class="muted">
             {{
               t(
-                'Data analyst focused on public value, evidence, and modern decision systems.',
-                'Analista de datos enfocado en valor público, evidencia y sistemas modernos de decisión.',
+                'Public policy and human rights professional with applied data skills for evidence and decision support.',
+                'Profesional en política pública y derechos humanos, con herramientas de datos para evidencia y apoyo a decisiones.',
               )
             }}
           </p>

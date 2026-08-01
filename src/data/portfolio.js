@@ -36,15 +36,15 @@ export const sections = [
 export const recruiterSignals = [
   {
     title: 'Best fit',
-    text: 'I am best positioned for data analyst and policy-insights roles in NGOs, international organizations, consulting teams, and public-interest institutions.',
+    text: 'I am a strong fit for roles in NGOs, public institutions, and consulting teams that need both policy experience and practical analytics.',
   },
   {
     title: 'What stands out',
-    text: 'I bring a rare combination of public-policy execution, stakeholder coordination, and hands-on analytics for real institutional decisions.',
+    text: 'I combine public-policy execution, stakeholder coordination, and hands-on analytics for real institutional decisions.',
   },
   {
     title: 'Immediate value',
-    text: 'I can contribute quickly in dashboarding, reporting, data cleaning, indicator design, and evidence synthesis for mission-driven teams.',
+    text: 'I can contribute quickly in reporting, evidence synthesis, coordination, dashboarding, and indicator design for mission-driven teams.',
   },
 ]
 
