@@ -25,10 +25,28 @@ const menuOpen = ref(false)
 const moreOpen = ref(false)
 const activeEvent = ref(null)
 const activePhotoIndex = ref(0)
+const expandedCases = ref({})
 const { locale, messages } = useI18n()
+
+const cvHref = computed(() =>
+  locale.value === 'es'
+    ? '/cv/CV_Jaime_Arreola_Varela_ES.pdf'
+    : '/cv/CV_Jaime_Arreola_Varela_EN.pdf',
+)
 
 function t(en, es) {
   return locale.value === 'es' ? es : en
+}
+
+function isCaseExpanded(title) {
+  return Boolean(expandedCases.value[title])
+}
+
+function toggleCase(title) {
+  expandedCases.value = {
+    ...expandedCases.value,
+    [title]: !expandedCases.value[title],
+  }
 }
 
 const translations = {
@@ -473,11 +491,10 @@ onUnmounted(() => {
 
         <div class="hero__ctas">
           <a class="btn btn--primary" href="#featured-impact">{{ t('View selected work', 'Ver trabajo destacado') }}</a>
-          <a class="btn btn--primary" href="#experience">{{ t('View experience', 'Ver experiencia') }}</a>
-          <a class="btn btn--ghost" href="mailto:jaaimevareela@gmail.com">{{ t('Get in touch', 'Contactar') }}</a>
-          <a class="btn btn--text" href="https://www.linkedin.com/in/jaimeavarela/" target="_blank" rel="noreferrer">
-            LinkedIn
+          <a class="btn btn--primary" :href="cvHref" download>
+            {{ t('Download CV', 'Descargar CV') }}
           </a>
+          <a class="btn btn--ghost" href="mailto:jaaimevareela@gmail.com">{{ t('Get in touch', 'Contactar') }}</a>
         </div>
 
         <div class="hero__socials">
@@ -620,10 +637,19 @@ onUnmounted(() => {
             <p class="timeline__type">{{ tx(item.context) }}</p>
             <h3>{{ tx(item.title) }}</h3>
             <div class="case-study__stack">
-              <p><strong>{{ t('Challenge:', 'Reto:') }}</strong> {{ tx(item.problem) }}</p>
-              <p><strong>{{ t('Approach:', 'Enfoque:') }}</strong> {{ tx(item.approach) }}</p>
               <p><strong>{{ t('Impact:', 'Impacto:') }}</strong> {{ tx(item.impact) }}</p>
+              <div v-show="isCaseExpanded(item.title)" class="case-study__details">
+                <p><strong>{{ t('Challenge:', 'Reto:') }}</strong> {{ tx(item.problem) }}</p>
+                <p><strong>{{ t('Approach:', 'Enfoque:') }}</strong> {{ tx(item.approach) }}</p>
+              </div>
             </div>
+            <button class="case-study__toggle" type="button" @click="toggleCase(item.title)">
+              {{
+                isCaseExpanded(item.title)
+                  ? t('Show less', 'Ver menos')
+                  : t('Show challenge & approach', 'Ver reto y enfoque')
+              }}
+            </button>
             <p v-if="item.href" class="muted case-study__evidence">
               <a :href="item.href" target="_blank" rel="noreferrer">{{ t('View supporting evidence', 'Ver evidencia de apoyo') }}</a>
             </p>
