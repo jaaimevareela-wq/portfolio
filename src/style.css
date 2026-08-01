@@ -314,7 +314,7 @@ ul {
   position: relative;
   min-height: 100svh;
   display: grid;
-  align-items: end;
+  align-items: start;
   overflow: hidden;
   color: #f4f7fa;
 }
@@ -322,7 +322,7 @@ ul {
 .hero__media {
   position: absolute;
   inset: 0;
-  background-position: center 8%;
+  background-position: center 12%;
   background-size: cover;
   background-repeat: no-repeat;
   transform: scale(1.04);
@@ -340,7 +340,7 @@ ul {
   z-index: 1;
   width: min(100% - 48px, var(--max));
   margin: 0 auto;
-  padding: calc(var(--nav-h) + 18px) 0 40px;
+  padding: calc(var(--nav-h) + 28px) 0 56px;
   animation: rise 0.9s ease both;
 }
 
