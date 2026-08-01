@@ -442,7 +442,7 @@ onUnmounted(() => {
     </header>
 
     <section id="top" class="hero">
-      <div class="hero__media" :style="{ backgroundImage: `url(${jaimeGraduationPhoto})` }" />
+      <div class="hero__media" :style="{ backgroundImage: `url(${jaimeUnPhoto})` }" />
       <div class="hero__veil" />
 
       <div class="hero__content">
@@ -525,7 +525,7 @@ onUnmounted(() => {
 
         <div class="about">
           <div class="about__portrait">
-            <img :src="jaimeUnPhoto" alt="Jaime at UN Human Rights Mexico event" />
+            <img :src="jaimeGraduationPhoto" alt="Jaime at graduation ceremony in Salamanca" />
           </div>
 
           <div>
